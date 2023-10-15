@@ -1,5 +1,19 @@
 # Week 0 — Billing and Architecture
 
+- going through platform business usecase
+- taking references of architecture diagram of what we plan to build :
+1.using draw.io / Lucid Chart to build architecture diagram
+2.Reading C4 model - https://c4model.com/
+- build useful architecture diagrams
+- cost of common cloud services
+- Running through the cloud services we will utilize
+- AWS UAT & account testing
+- working meter-billing with AWS
+- AWS account signup and track spend in AWS
+eg . AWS Budgets, AWS Cost Explorer, Billing Alarms
+- Look at monthly billing reports
+- Launching AWS CloudShell and exploring AWS CLI
+- Generating AWS credentials
 - Documentation : HLD & LLD
   Learning and implementing mix of both
 - AWS Billing
@@ -7,6 +21,25 @@
 - AWS architecture best practices.
 - connect each service organically to create architecture like a 3-tier web application
 - Sevices used
+
+# Expectation
+
+| week No. | Outcome                                           | Business Scenario                                | Possible Spend Considerations                                               | Security Considerations | Alternative Considerations | Challenges                                                                                                                              |
+|----------|---------------------------------------------------|--------------------------------------------------|-----------------------------------------------------------------------------|-------------------------|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| 0        | build useful architecture diagrams                | propose implementation architecture              | what spend company expect to encounter.                                     | …                       | …                          | -Destroying your root account credentials                                                                                               |
+|          | Walkthrough for cost of AWS common cloud services | get it reviewed by our fractional CTO            | how to ensure we keep our spending low.                                     |                         |                            |                                                                                                                                         |
+|          | AWS meter-billing                                 | include technical architecture diagram           | initial assumption :                                                        |                         |                            | -Set MFA, IAM role                                                                                                                      |
+|          |                                                   | breakdown possible services & give justification | 1. a credit card to activate your AWS Account.                              |                         |                            |                                                                                                                                         |
+|          |                                                   |                                                  | 2. AWS account  > 12 months, free-tier for some services won't be available |                         |                            | -Use EventBridge to hookup Health Dashboard to SNS and send notification when there is a service health issue.                          |
+|          |                                                   |                                                  | 3. check with sales team for AWS Credits program                            |                         |                            |                                                                                                                                         |
+|          |                                                   |                                                  |                                                                             |                         |                            | -Review all the questions of each pillars in the Well Architected Tool (No specialized lens)                                            |
+|          |                                                   |                                                  |                                                                             |                         |                            |                                                                                                                                         |
+|          |                                                   |                                                  |                                                                             |                         |                            | -Create an architectural diagram (to the best of your ability) the CI/CD logical pipeline in Lucid Charts                               |
+|          |                                                   |                                                  |                                                                             |                         |                            |                                                                                                                                         |
+|          |                                                   |                                                  |                                                                             |                         |                            | -Research the technical and service limits of specific services and how they could impact the technical path for technical flexibility. |
+|          |                                                   |                                                  |                                                                             |                         |                            |                                                                                                                                         |
+|          |                                                   |                                                  |                                                                             |                         |                            | -Open a support ticket and request a service limit                                                                                      |
+| 1        |                                                   |                                                  |                                                                             |                         |                            |                                                                                                                                         |
 
 # Source
 
